@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="scene"></div>
+	<div class="content">
+		<div id="update-form" style="display: none;" class="form">	
+			<h2>Editar tarefa</h2>
+			
+			<form onsubmit="handleSubmitUpdate(event)">
+			
+				<br>
+				<input hidden type="text" id="update-todo-id" name="todo">
+				<input type="text" id="update-todo" name="todo" class="custom--outline" placeholder="ex: Vizitar primo">
+				<button class="edite" type="submit">editar tarefa</button>
+				
+			</form>
+			<div style="margin-top: 10px;">
+				<button onclick="handleEditTodoFormCancel()" class="delete">cancelar</button>
+
+			</div>
+		</div>
+	
+		<div id="create-form" class="form">	
+			<h2>Criar tarefa</h2>
+			
+			<form onsubmit="handleSubmitCreate(event)">
+				
+				<br>
+				<input class="custom--outline" type="text" id="create-todo" name="todo" placeholder="ex: Vizitar primo">
+				<br>
+				<button class="action custom--outline" type="submit">criar tarefa</button>
+			</form>
+		</div>
+		<div id="todo-display" class="todos">
+			<h2>Tarefas</h2>
+			<ul id="todo-list">
+				<li><span>uis</span><div><button class="edite custom--outline">editar</button> <button class="delete custom--outline">deletar</button></div></li>
+			</ul>
+		</div>
+	
+	</div>
+	
+<script src="./js/app.js"></script>
+</body>
+</html>

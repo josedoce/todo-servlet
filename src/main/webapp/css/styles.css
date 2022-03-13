@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: url("https://i.picsum.photos/id/1037/5760/3840.jpg?hmac=fZe213BcO2KPQEJKChsdHnVYg-6kAtQMTZV24f1fS94");
+	font-family: sans-serif;
+	background-attachment: fixed;
+	background-size: cover;
+	color: rgba(255, 255, 255, 0.7);
+}
+.scene {
+	background: rgba(0, 0, 0, 0.788);
+	width: 100vw;
+	height: 100vh;
+}
+.content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+.form {
+	
+	background-color: #404040;
+	border-radius: 34px;
+	padding: 20px 40px 40px 40px;
+	border: 1px solid rgba(199, 195, 195, 0.431);
+}
+.form h2 {
+	color: rgb(27, 194, 55);
+	text-shadow: 0px 2px 0px rgb(31, 146, 31);
+	font-family: "Press Start 2P";
+	font-size: 20px;
+	word-spacing: -11px;
+}
+
+.form input {
+	width: 100%;
+	height: 35px;
+	border-radius: 17.5px;
+	margin-bottom: 15px;
+	background-color: rgba(235, 227, 226, 0.808);
+}
+.form input, .form h2 {
+	text-align: center;
+}
+.form input, .form input::placeholder {
+	word-spacing: -7px;
+	font-family: "Press Start 2P";
+	font-size: 13px;
+	
+}
+.form button {
+	border-radius: 17.5px;
+	height: 30px;
+	padding: 0 20px;
+	font-family: "Press Start 2P";
+	word-spacing: -7px;
+	font-size: 11px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.todos {
+	margin-top: 4px;
+	border-radius: 34px;
+	padding: 20px 20px 20px 20px;
+	background-color: #404040;
+	border: 1px solid rgba(199, 195, 195, 0.431);
+}
+.todos h2 {
+	font-family: "Press Start 2P";
+	font-size: 13px;
+	color: rgb(27, 194, 55);
+	text-shadow: 0px 2px 0px rgb(31, 146, 31);
+}
+.todos ul {
+	margin-top: 10px;
+	list-style: none;
+}
+.todos ul li {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+	background-color: rgba(128, 45, 211, 0.681);
+	padding: 5px 10px;
+	border-radius: 7px;
+	border: 1px solid white;
+}
+.form input, .action, .delete, .edite {
+	border: 1px solid gray;
+}
+.custom--outline:focus {
+	outline-color: rgb(190, 17, 243);
+	outline-style: groove;
+	outline-width: 1px;
+}
+.todos ul li button {
+	text-align: center;
+	border-radius: 13px;
+	cursor: pointer;
+
+	font-family: "Press Start 2P";
+	padding: 5px;
+	font-size: 8px;
+}
+
+.delete {
+	background-color: rgba(255, 0, 0, 0.747);
+	color: rgb(217, 237, 255);
+}
+
+.delete:hover {
+	background-color: rgb(255, 0, 0);
+}
+
+.edite, .action {
+	background-color: rgba(0, 255, 64, 0.747);
+	color: rgb(0, 0, 0);
+}
+
+.edite:hover, .action:hover {
+	background-color: rgb(81, 255, 0);
+}
